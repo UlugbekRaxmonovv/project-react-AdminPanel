@@ -31,7 +31,7 @@ const Saidbar = () => {
     <a href="" className="">    <BsFillGrid3X2GapFill className="icon "/> Categories</a>
     </li>
     <li className="sidebar-list-item">
-       <a href="" className=""> <BsPeopleFill className="icon "/> Customers</a>
+  <Link to={'user'}> <BsPeopleFill className="icon "/>User</Link>
     </li>
     <li className="sidebar-list-item">
       <a href="" className="">  <BsListCheck className="icon "/> Enventory</a>

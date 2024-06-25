@@ -4,9 +4,9 @@ export const productApi = api.injectEndpoints({
   endpoints: (build) => ({
     // Get request
     getProducts: build.query({
-      query: (params) => ({ 
-        url: '/products?limit=4', 
-        params 
+      query: (query) => ({ 
+        url:  `/products${query.path}`, 
+        params:query.params
       }),
       providesTags:["Product"]
     }),
@@ -35,13 +35,32 @@ export const productApi = api.injectEndpoints({
         method: "DELETE"
       }),
       invalidatesTags: ["Product"]
+    }),
+    getSorchProdact:build.query({
+      query:(params) =>({
+        url:`products/search`,
+        method: "GET",
+        params
+      }),
+      providesTags:["Product"]
+    }),   
+    getCategory: build.query({
+      query: (params) => ({ 
+        url: `/products/category-list`, 
+        method: 'GET',
+        params 
+      }),
+      providesTags:[""]
     })
   }),
-})
+  })
+
 
 export const {
   useGetProductsQuery,
   useDeleteProductMutation,
   useCreateProductMutation,
-  useUpdateProductMutation
+  useUpdateProductMutation,
+  useGetSorchProdactQuery,
+  useGetCategoryQuery,
 } = productApi

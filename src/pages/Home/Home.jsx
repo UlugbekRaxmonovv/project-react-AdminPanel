@@ -1,7 +1,8 @@
-import React from 'react';
+import React,{useState} from 'react';
+import Header1 from  '../../components/Header1/Header1'
 import {BsFillArchiveFill,BsFillGrid3X2GapFill,BsPeopleFill,BsFillGearFill} from 'react-icons/bs';
 import {LineChart, Line, BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-const Home = () => {
+const Home = ({length}) => {
     const data = [
         {
           name: 'Page A',
@@ -47,6 +48,8 @@ const Home = () => {
         },
       ];
     return (
+    <>
+      <Header1/>
        <main className="main-container">
         <div className="mian-title">
             <h3>DASHBOARD</h3>
@@ -57,7 +60,7 @@ const Home = () => {
                 <h3>PRODUCTS</h3>
                 <BsFillArchiveFill className='card-icon'/>
             </div>
-            <h1>30</h1>
+            <h1>{length}</h1>
             </div>
             <div className="card">
             <div className="card-inner">
@@ -130,6 +133,7 @@ const Home = () => {
       </ResponsiveContainer>
         </div>
        </main>
+    </>
     );
 }
 
