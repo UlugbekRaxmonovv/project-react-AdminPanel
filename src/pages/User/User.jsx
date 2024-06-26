@@ -72,27 +72,7 @@ const User = ({ btn1 }) => {
         setModal(false);
     };
 
-    const [visible, setVisible] = useState(false);
 
-    const toggleVisibility = () => {
-        if (window.pageYOffset > 300) {
-            setVisible(true);
-        } else {
-            setVisible(false);
-        }
-    };
-
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', toggleVisibility);
-        return () => window.removeEventListener('scroll', toggleVisibility);
-    }, []);
 
     const links = users?.map((user, index) => (
         <tr key={user.id}>
@@ -124,6 +104,19 @@ const User = ({ btn1 }) => {
                                 <th>Contact</th>
                                 <th style={{ width: '100px', textAlign: 'center' }}>Action</th>
                             </tr>
+                            <tr>
+            <td style={{ textAlign: 'center' }}>0</td>
+            <td className='td'>Jasur</td>
+            <td>jasur@gmail.com</td>
+            <td>+99890 499 19 72</td>
+            <td>
+                <div className="oll">
+                    <button className="btn btn-primary" onClick={() => handleEdit()}>Edit</button>
+                    <button className="btn btn-danger" onClick={() => handleDelete()}>Delete</button>
+                    <button className="btn btn-dangert" onClick={() => setModal(true)}>Add user</button>
+                </div>
+            </td>
+        </tr>
                         </thead>
                         <tbody>
                             {links}
@@ -174,13 +167,6 @@ const User = ({ btn1 }) => {
                         </Modul>
                     )}
                 </div>
-            </div>
-            <div className="back-to-top">
-                {visible &&
-                    <button onClick={scrollToTop} className="back-to-top-button">
-                        <VscChevronUp />
-                    </button>
-                }
             </div>
         </>
     );

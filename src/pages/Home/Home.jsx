@@ -60,7 +60,7 @@ const Home = ({length}) => {
                 <h3>PRODUCTS</h3>
                 <BsFillArchiveFill className='card-icon'/>
             </div>
-            <h1>{length}</h1>
+            <h1>30</h1>
             </div>
             <div className="card">
             <div className="card-inner">

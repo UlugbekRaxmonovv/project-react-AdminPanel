@@ -1,3 +1,58 @@
 {
-  "users": []
+  "users": [
+    {
+      "name": "James Williamswfsfwas",
+      "email": "jameswilly@gmail.comwswas",
+      "number": "+998 (08) 904 99 19",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "Ahmed Ali",
+      "email": "ahmedali012@gmail.com",
+      "number": "09022222222"
+    },
+    {
+      "id": "4",
+      "name": "Grace Funsho",
+      "email": "gracefunsho@gmail.com",
+      "number": "09033333333"
+    },
+    {
+      "id": "716d",
+      "name": "ws",
+      "email": "john@gmail.com",
+      "number": "+998 (26) 252 52 62"
+    },
+    {
+      "id": "0f64",
+      "name": "Ulugʻbek",
+      "email": "john@gmail.com",
+      "number": "+998 (26) 252 52 62"
+    },
+    {
+      "id": "b139",
+      "name": "fws",
+      "email": "dostonshernazarov2001@gmail.com",
+      "number": "+998 (90) 499 19 72"
+    },
+    {
+      "id": "52f1",
+      "name": "fws",
+      "email": "john@gmail.com",
+      "number": "+998 (90) 499 19 72"
+    },
+    {
+      "id": "b7b1",
+      "name": "aaaaaaaaaaaaaaaaaaa",
+      "email": "wsa@gmail.com",
+      "number": "+998 (90) 499 19 72"
+    },
+    {
+      "id": "5681",
+      "name": "wsa",
+      "email": "dostonshernazarov2001@gmail.com",
+      "number": "+998 (90) 499 19 72"
+    }
+  ]
 }
